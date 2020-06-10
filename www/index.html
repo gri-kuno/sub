@@ -1,17 +1,153 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="components/loader.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+  <meta charset="utf-8">
+  <title>入力したい</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+  <!-- 入力したものを下に出す -->
+  <!-- フォームの定義 --> 
+  <form id="form1" action="#">
+    <input type="text" id="input_message" value="">
+    <input type="button" onclick="func1()" value="送信">
+  </form>
+  <div id="output_message"></div>
+  <script language="javascript" type="text/javascript">
+  // クリック示の動きーーー
+  </script>
+
+<!-- ここから本番 -->
+        <div class="signup-modal-wrapper" id="signup-modal">
+          <div class="modal">
+            <div id="close-modal">
+              <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div id="signup-form">
+              <h2>入力フォーム</h2>
+              <form  id="form2" action="#">
+                <input class="form-control"  id="input_message2" value="" type="text" placeholder="アイコン選択" >
+                <input class="form-control" id="input_message2" value=""
+                type="text" placeholder="行った場所">
+                <input class="form-control" id="input_message2" value=""
+                type="text" placeholder="おすすめ度">
+                <input class="form-control" id="input_message2" value=""
+                type="text" placeholder="コメント">
+                <input type="button" onclick="func2()" value="保存">
+                <!-- <div id="submit-btn">保存</div> -->
+
+                <div id="form-text"></div>
+              </form>
+              <div id="output_message2"></div>
+            </div>
+          </div>
+        </div>
+  <!-- ここまで -->
+  <br>
+  <!-- 入力したものを下に出す -->
+  <!-- フォームの定義 --> 
+  <!-- <form id="form2" action="#">
+    <input type="text" id="input_message" value="">
+    <input type="button" onclick="func2()" value="送信">
+  </form>
+  <div id="output_message"></div>
+  <script language="javascript" type="text/javascript"> -->
+  <!-- // クリック示の動きーーー -->
+  <!-- function func2() {
+    var input_message = document.getElementById("input_message").value;
+    input_message = "入力された内容は「" + input_message + "」です。";
+    document.getElementById("output_message").innerHTML = input_message;
+  }
+  </script> -->
+  <!--  入力し -->
+
+
+  <br>
+  <br>
+  <!-- モーダルウィンドウ クリックしてもっていく -->
+  <div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+      <div id="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="signup-form">
+        <h2>入力フォーム</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="アイコン選択">
+          <input class="form-control" type="text" placeholder="行った場所">
+          <input class="form-control" type="text" placeholder="おすすめ度">
+          <input class="form-control" type="password" placeholder="コメント">
+          <div id="submit-btn">保存</div>
+          <div id="form-text"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- モーダルここまで -->
+
+  
+    <div class="container">
+      
+      <!-- ボタン -->
+      <div class="btn signup signup-show">入力</div>
+    </div>
+      <!-- ボタン -->
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    <br>
+      <div class="btn signup signup-show">入力</div>
+    </div>
+    
+
+  
+  
+  <div class="lesson-wrapper">
+    <div class="container">
+     
+      <!-- ボタン -->
+      <span class="btn message signup-show">入力する</span>
+    </div>
+  </div>
+
+ 
+  <script src="script.js"></script>
 </body>
 </html>
